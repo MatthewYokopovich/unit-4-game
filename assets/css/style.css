@@ -1,3 +1,43 @@
+body{
+    background-image: url("../images/tf2background.jpg");
+    color: white;
+}
 img{
-    width: 130px;
+    width: 110px;
+}
+
+.container-fluid{
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .character{
+      border-style: solid;
+      border-width: 2px;
+  }
+  .your-character-element{
+      border-style:solid;
+      border-width: 2px;
+      border-color: green;
+  }
+
+  .enemy-character-element{
+      border-style: solid;
+      border-width: 2px;
+      border-color: red;
+  }
+
+#your-img{
+    visibility:hidden;
+}
+
+#enemy-img{
+    visibility:hidden;
 }

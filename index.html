@@ -2,45 +2,72 @@
 <html>
     <head>
         <title>TF2 RPG Game</title>        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <div class="container-fluid" style="color:blue;" id="main">
+        <div class="container-fluid" id="main">
             <div class="row">
+                 <h1 id="character-select-text">Choose a Character!</h1>
+            </div>
+           
+            <div class="row character-select">
                 <div class="col-md-auto character" id="scout">
+                    <p class="name">Scout</p>
                     <img src="assets/images/scout.jpg">
                 </div>
                 <div class="col-md-auto character" id="soldier">
+                    <p>Soldier</p>
                     <img src="assets/images/soldier.jpg" alt="">
                 </div>
                 <div class="col-md-auto character" id="pyro">
+                    <p>Pyro</p>
                     <img src="assets/images/pyro.jpg" alt="">
                 </div>
                 <div class="col-md-auto character" id="demo">
+                    <p>Demoman</p>
                     <img src="assets/images/demo.jpg" alt="">
                 </div>
                 <div class="col-md-auto character" id="heavy">
+                    <p>Heavy Weapons Guy</p>
                     <img src="assets/images/heavy.jpg">
                 </div>
                 <div class="col-md-auto character" id="engineer">
+                    <p>Engineer</p>
                     <img src="assets/images/engineer.jpg">
                 </div>
                 <div class="col-md-auto character" id="medic">
+                    <p>Medic</p>
                 <img src="assets/images/medic.jpg" alt="">
                 </div>
                 <div class="col-md-auto character" id="sniper">
+                    <p>Sniper</p>
                 <img src="assets/images/sniper.jpg" alt="">
                 </div>
                 <div class="col-md-auto character" id="spy">
+                    <p>Spy</p>
                 <img src="assets/images/spy.jpg" alt="">
                 </div>
             </div>
-            
+            <div class="row your-character">
+                <h1>Your Character</h1>
+                <img src="assets/images/demo.jpg" alt="" id="your-img">
+            </div>
+            <div class="row enemy">
+                <h1>Your Opponent</h1>
+                <img src="assets/images/engineer.jpg" alt="" id="enemy-img">
+            </div>
+            <div class="row fight">
+                <button type="button" class="btn btn-primary" id="atk-btn">Fight</button>
+            </div>
+            <div class="row log">
+                <p>Combat Log</p>
+            </div>
         </div>
 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/game.js"></script>
     </body>
 </html>
